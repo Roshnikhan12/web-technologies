@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Student Registration Form</h2>
+            <form>
+                <label for="name"> Full Name:
+                    <input id="name" type="text" placeholder="Enter your full name" required>
+                </label>
+                <label for="email"> Email:
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </label>
+                <label for="phone">Phone Number:
+                    <input type="text" id="phone" placeholder="Enter your phone number" required>
+                </label>
+                <label for="dob">Date of Birth:
+                    <input type="date" id="dob" required>
+                </label>
+                <label for="address">Address:
+                    <input type="text" id="address" placeholder="Enter your address" required>
+                </label>
+                
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label>
+                        <input type="radio" name="gender" value="Male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Female"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Other"> Other
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Courses Interested In</legend>
+                    <label>
+                        <input type="checkbox" name="courses" value="Computer Science"> Computer Science
+                    </label>
+                    <label>
+                        <input type="checkbox" name="courses" value="Mathematics"> Mathematics
+                    </label>
+                    <label>
+                        <input type="checkbox" name="courses" value="Physics"> Physics
+                    </label>
+                    <label>
+                        <input type="checkbox" name="courses" value="Engineering"> Engineering
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <textarea cols="30" rows="3" placeholder="Any additional information..."></textarea>
+                </fieldset>
+                
+                <input type="reset" value="Reset">
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
