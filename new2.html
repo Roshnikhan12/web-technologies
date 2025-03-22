@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Design</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+    }
+
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color: blue;
+        padding-top: 20px;
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        transition: 0.3s;
+    }
+
+    .sidebar ul li a i {
+        margin-right: 15px;
+    }
+
+    .sidebar ul li:hover {
+        background-color: green;
+    }
+
+
+    .content {
+        margin-left: 270px;
+        
+        padding: 20px;
+    }
+
+    .center {
+        text-align: center;
+        color: grey;
+    }
+
+    .pic {
+        margin-left: 200px;
+        color: grey;
+    }
+</style>
+
+<body>
+    <div class="sidebar">
+        <h2>Sidebar <i class="fa-solid fa-bars"></i></h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> User Profile</a></li>
+            <li><a href="#"><i class="fas fa-ticket-alt"></i> Support Tickets</a></li>
+            <li><a href="#"><i class="fas fa-archive"></i> Archive</a></li>
+            <li><a href="#"><i class="fas fa-chart-bar"></i> Statistics</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1 class="center">Your Wonderful Article Title</h1>
+        <p class="center">Sample content goes here...</p>
+        <img class="pic" width="750px" height="450px"
+            src="https://plus.unsplash.com/premium_photo-1663076367860-3cde6cedaf66?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+        <p class="pic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sunt? Cum adipisci nulla
+            alias culpa itaque? Magnam totam aut nisi, dicta quod iure repudiandae officiis possimus provident
+            reiciendis quas odio?</p>
+        <p class="pic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam neque dicta, eveniet corrupti
+            pariatur enim numquam quae sed! Iure non sint fuga consequatur praesentium ipsum recusandae laboriosam
+            veniam quos quia?</p>
+    </div>
+</body>
+
+</html>
